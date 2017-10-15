@@ -22,7 +22,7 @@
           <ion-input type="password" placeholder="Contraseña"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input input="text" type="email" placeholder="Correo Electronico"></ion-input>
+          <ion-input type="email" placeholder="Correo Electronico"></ion-input>
         </ion-item>
         <a>Fecha de nacimiento</a>
         <ion-item>
@@ -32,10 +32,12 @@
         <input type="radio" name="sex" value="Masculino" checked>Masculino
         <input type="radio" name="sex" value="Femenino">Femenino
       </ion-item>
-      <ion-item>
-          <ion-label>Licencia</ion-label>
-          <ion-checkbox [(ngModel)]="Licencia"></ion-checkbox>
-        </ion-item>
+      <ion-item id="checkbox">
+        <ion-label>
+          Licencia de manejar
+        </ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
       <ion-item>
           <ion-input input="text" placeholder="Direccion"></ion-input>
         </ion-item>
@@ -43,7 +45,7 @@
             <ion-input type="number" placeholder="Codigo Postal"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-input type="number" placeholder="Celular"></ion-input>
+            <ion-input type="tel" placeholder="Celular"></ion-input>
         </ion-item>
       </ion-list>
       <button ion-button block outline color="light">Registrarse</button>
