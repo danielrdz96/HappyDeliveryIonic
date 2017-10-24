@@ -1,6 +1,8 @@
+import { InicioPage } from './../inicio/inicio';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { RegisterPage } from '../registrarse/registro';
+
 
 
 @Component({
@@ -15,5 +17,11 @@ export class HomePage {
   Registrarse () {
     this.navCtrl.push(RegisterPage);
   }
+
+  Inicio () {
+    this.navCtrl.push(InicioPage);
+    
+  }
+  
 
 }
